@@ -1,0 +1,11 @@
+Izveidoju programmu, kura var pievienot un dzest darbiniekus
+
+Izveidoju divus User Controls:
+1. UserConrol1 - jauna darbinieka pievienošanai
+	-Sastav no: Grid, Label, TextBox, ComboBox, DatePicker, Button
+	-Properties: VardsUC, UzvardsUC, AmatsUC, DatumsUC
+	-Notikums: Entered
+2. UserControl2 - darbinieka dzešanai
+	-Sastav no: Grid, Label, TextBlock, Button
+	-Properties: VardsUC, UzvardsUC, AmatsUC, DatumsUC
+	-Notikums: Dzest

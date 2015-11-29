@@ -1,0 +1,20 @@
+﻿<Window x:Name="uc" x:Class="mdControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mdControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="367.375" Width="518.794" ResizeMode="NoResize">
+    <Grid Margin="0,10,2,7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="256*"/>
+            <ColumnDefinition Width="255*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listBox" Grid.Column="1" HorizontalAlignment="Left" Height="112" Margin="10,46,0,0" VerticalAlignment="Top" Width="203" SelectionChanged="listBox_SelectionChanged"/>
+        <local:UserControl1 x:Name="uc1" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Height="190" Width="235" Loaded="uc1_Loaded" Entered="uc1_Entered"/>
+        <Label x:Name="label" Content="Pievienot jaunu darbinieku" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="220" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Darbinieku saraksts" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="220" FontSize="16" FontWeight="Bold" Grid.Column="1"/>
+        <local:UserControl2 x:Name="uc2" Grid.Column="1" HorizontalAlignment="Left" Margin="13,163,0,0" VerticalAlignment="Top" Height="122" Width="217" Loaded="uc2_Loaded" Dzest="uc2_Dzest"/>
+    </Grid>
+</Window>

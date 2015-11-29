@@ -1,0 +1,31 @@
+﻿<UserControl x:Name="uc2" x:Class="mdControl.UserControl2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:mdControl"
+             mc:Ignorable="d" Width="217.021" Height="122.34">
+    <Grid HorizontalAlignment="Left" Width="217" Margin="0,0,0,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="129*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Vards" Content="Vārds" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Margin="10,-2,10,20" VerticalAlignment="Bottom" Width="60" Height="26" FontSize="13.333" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label x:Name="Uzvards" Content="Uzvārds" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="60" Height="26" FontSize="13.333" FontWeight="Bold"/>
+        <Label x:Name="Amats" Content="Amats" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="60" Height="26" FontSize="13.333" FontWeight="Bold"/>
+        <Label x:Name="Datums" Content="Datums" Grid.Column="0" Grid.Row="3" Margin="0" VerticalAlignment="Center" Width="60" Height="26" FontSize="13.333" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Button x:Name="button2" Content="Dzēst" Grid.Column="2" HorizontalAlignment="Left" Margin="0,21,0,0" Grid.Row="3" VerticalAlignment="Center" Width="89" Height="24" FontSize="13.333" FontWeight="Bold" Click="button2_Click" Grid.RowSpan="2"/>
+        <TextBlock x:Name="VardsBlock" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Margin="0,0,0,2" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="13.333" Width="102" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="UzvardsBlock" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="13.333" Width="102" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="AmatsBlock" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="13.333" Width="102" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="DatumsBlock" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="13.333" Width="102" Grid.ColumnSpan="2"/>
+    </Grid>
+</UserControl>
